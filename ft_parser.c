@@ -1,36 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_parser.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/12 14:58:19 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/12/13 18:35:31 by clira-ne         ###   ########.fr       */
+/*   Created: 2023/12/13 18:36:17 by clira-ne          #+#    #+#             */
+/*   Updated: 2023/12/13 19:56:26 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printf(const char *str, ...)
+int	ft_parser(char flag, va_list ap)
 {
-	va_list	ap;
-	int		i;
-	int		bytes;
+	int	bytes;
 
-	if (!str)
-		return (-1);
-	va_start(ap, str);
-	i = 0;
 	bytes = 0;
-	while (str[i])
-	{
-		if (str[i] == '%' && str[i + 1] != '\0')
-			bytes += ft_parser(str[++i], ap);
-		else
-			bytes += ft_putchar(str[i]);
-		i++;
-	}
-	va_end(ap);
+	if (flag == 'c')
+		bytes += ft_putchar(va_arg(ap, int));
+	else if (flag == 's')
+		bytes += ft_putstr(va_arg(ap, char *));
+	else if (flag == 'p')
+		bytes += ft_ptr_base(va_arg(ap, unsigned long), HEXA_LOWER_BASE);
+	else if (flag == 'd')
+		bytes += ft_n_base(va_arg(ap, int), DECIMAL_BASE);
 	return (bytes);
 }

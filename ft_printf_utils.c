@@ -6,7 +6,7 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 16:15:17 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/12/13 19:50:37 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/12/14 16:43:32 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,3 +78,16 @@ int	ft_ptr_base(unsigned long num, char *base)
 	bytes += ft_putchar(base[num % size_base]);
 	return (bytes);
 }
+
+// char	*ft_strchr(const char *str, int c)
+// {
+// 	while (*str)
+// 	{
+// 		if (*str == (unsigned char)c)
+// 			return ((char *)str);
+// 		str++;
+// 	}
+// 	if ((unsigned char) c == '\0')
+// 		return ((char *)str);
+// 	return (NULL);
+// }

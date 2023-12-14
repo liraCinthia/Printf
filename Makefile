@@ -1,6 +1,6 @@
 NAME = libftprintf.a
 
-FILES = ft_printf_utils.c ft_printf.c ft_parser
+FILES = ft_printf_utils.c ft_printf.c ft_parser.c
 
 FILES_OBJ = $(FILES:.c=.o)
 

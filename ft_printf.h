@@ -6,7 +6,7 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 15:35:12 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/12/13 19:50:50 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/12/14 14:23:35 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 
 # include <unistd.h>
 # include <stdarg.h>
-
 
 int	ft_strlen(char *str);
 int	ft_putchar(char c);

@@ -6,7 +6,7 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 18:36:17 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/12/13 19:56:26 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/12/14 14:30:46 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,15 @@ int	ft_parser(char flag, va_list ap)
 		bytes += ft_putstr(va_arg(ap, char *));
 	else if (flag == 'p')
 		bytes += ft_ptr_base(va_arg(ap, unsigned long), HEXA_LOWER_BASE);
-	else if (flag == 'd')
+	else if (flag == 'd' || flag == 'i')
 		bytes += ft_n_base(va_arg(ap, int), DECIMAL_BASE);
+	else if (flag == 'u')
+		bytes += ft_n_base(va_arg(ap, unsigned int), DECIMAL_BASE);
+	else if (flag == 'x')
+		bytes += ft_n_base(va_arg(ap, unsigned int), HEXA_LOWER_BASE);
+	else if (flag == 'X')
+		bytes += ft_n_base(va_arg(ap, unsigned int), HEXA_UPPER_BASE);
+	else if (flag == '%')
+		bytes += ft_putchar('%');
 	return (bytes);
 }

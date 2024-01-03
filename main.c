@@ -6,7 +6,7 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 18:47:15 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/12/14 16:45:42 by clira-ne         ###   ########.fr       */
+/*   Updated: 2024/01/03 09:24:12 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ int main()
 // 	void	*ptr = NULL;
 // 	char	*str = NULL;
 
-// 	ft_printf("func criada:\n");
-// 	ft_printf("%c\n", 'a');
-// 	printf("original:\n");
-// 	printf("%c\n", 'a');
+	// ft_printf("func criada:\n");
+	// ft_printf("%c\n", 'a');
+	// printf("original:\n");
+	// printf("%c\n", 'a');
 
 // 	ft_printf("func criada:\n");
 // 	ft_printf("%s\n", "hello world");
@@ -54,10 +54,10 @@ int main()
 // 	printf("original:\n");
 // 	printf("%d\n", INT_MIN);
 
-// 	ft_printf("func criada:\n");
-// 	ft_printf("%i\n", -42);
-// 	printf("original:\n");
-// 	printf("%i\n", -42);
+	// ft_printf("func criada:\n");
+	// ft_printf("%i\n", -42);
+	// printf("original:\n");
+	// printf("%i\n", -42);
 
 // 	ft_printf("func criada:\n");
 // 	ft_printf("%u\n", 42);
@@ -79,8 +79,4 @@ int main()
 // 	printf("original:\n");
 // 	printf("%%\n", '%');
 
-	ft_printf("func criada:\n");
-	ft_printf("%c\n", '#');
-	printf("original:\n");
-	printf("%c\n", '#');
 }

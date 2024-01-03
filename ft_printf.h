@@ -6,7 +6,7 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 15:35:12 by clira-ne          #+#    #+#             */
-/*   Updated: 2024/01/03 09:23:04 by clira-ne         ###   ########.fr       */
+/*   Updated: 2024/01/03 10:14:10 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,5 @@ int		ft_n_base(long long num, char *base);
 int		ft_ptr_base(unsigned long num, char *base);
 int		ft_printf(const char *type, ...);
 int		ft_parsing(char type, va_list ap);
-char	*ft_strchr(const char *str, int c);
-int		ft_parser_bonus(char flag, va_list ap);
 
 #endif

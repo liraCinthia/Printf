@@ -36,7 +36,9 @@ cc ft_parsing.c ft_printf_utils.c ft_printf.c main.c
 Run the compiled program:
 ```
 ./your_executable_file
+```
 Example:
+```
 ./a.out
 ```
 
